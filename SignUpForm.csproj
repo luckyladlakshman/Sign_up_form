@@ -1,0 +1,294 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C2A63F2B-7F13-49CF-AEEE-344DF748DC70}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>SignUpForm</RootNamespace>
+    <AssemblyName>SignUpForm</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <Resource Include="Fonts\AppleGaramond-Bold.ttf" />
+    <Resource Include="Fonts\AppleGaramond-BoldItalic.ttf" />
+    <Resource Include="Fonts\AppleGaramond-Italic.ttf" />
+    <Resource Include="Fonts\AppleGaramond-Light.ttf" />
+    <Resource Include="Fonts\AppleGaramond-LightItalic.ttf" />
+    <Resource Include="Fonts\AppleGaramond.ttf" />
+    <Resource Include="Fonts\Arlita.otf" />
+    <Resource Include="Fonts\Bebas-Regular.otf" />
+    <Resource Include="Fonts\Bebas-Regular.ttf" />
+    <Resource Include="Fonts\BebasKai.otf" />
+    <Resource Include="Fonts\BebasKai.ttf" />
+    <Resource Include="Fonts\BlestiveScript_PERSONAL_USE_ONLY.otf" />
+    <Resource Include="Fonts\Brand.otf" />
+    <Resource Include="Fonts\Brand.ttf" />
+    <None Include="Fonts\Brand.woff" />
+    <Resource Include="Fonts\built titling bd it.otf" />
+    <Resource Include="Fonts\built titling bd.otf" />
+    <Resource Include="Fonts\built titling el it.otf" />
+    <Resource Include="Fonts\built titling el.otf" />
+    <Resource Include="Fonts\built titling lt it.otf" />
+    <Resource Include="Fonts\built titling lt.otf" />
+    <Resource Include="Fonts\built titling rg it.otf" />
+    <Resource Include="Fonts\built titling rg.otf" />
+    <Resource Include="Fonts\built titling sb it.otf" />
+    <Resource Include="Fonts\built titling sb.otf" />
+    <Resource Include="Fonts\chiptune-valentine.ttf" />
+    <Resource Include="Fonts\Comfortaa-Bold.ttf" />
+    <Resource Include="Fonts\Comfortaa-Light.ttf" />
+    <Resource Include="Fonts\Comfortaa-Regular.ttf" />
+    <Resource Include="Fonts\DAYROM_X.ttf" />
+    <Resource Include="Fonts\DAYROM__.ttf" />
+    <Resource Include="Fonts\DivisionOne-Bold.otf" />
+    <Resource Include="Fonts\Dream Orphans Bd It.otf" />
+    <Resource Include="Fonts\Dream Orphans Bd.otf" />
+    <Resource Include="Fonts\Dream Orphans It.otf" />
+    <Resource Include="Fonts\Dream Orphans.otf" />
+    <Resource Include="Fonts\Evogria Italic.otf" />
+    <Resource Include="Fonts\Evogria.otf" />
+    <Resource Include="Fonts\Fondest.ttf" />
+    <Resource Include="Fonts\HeadingNowTrial-01Thin.ttf" />
+    <Resource Include="Fonts\HeadingNowTrial-01ThinItalic.ttf" />
+    <Resource Include="Fonts\HeadingNowTrial-02Light.ttf" />
+    <Resource Include="Fonts\HeadingNowTrial-02LightItalic.ttf" />
+    <Resource Include="Fonts\HeadingNowTrial-03Book.ttf" />
+    <Resource Include="Fonts\HeadingNowTrial-03BookItalic.ttf" />
+    <Resource Include="Fonts\HeadingNowTrial-04Regular.ttf" />
+    <Resource Include="Fonts\HeadingNowTrial-04RegularItalic.ttf" />
+    <Resource Include="Fonts\HeadingNowTrial-05Medium.ttf" />
+    <Resource Include="Fonts\HeadingNowTrial-05MediumItalic.ttf" />
+    <Resource Include="Fonts\HeadingNowTrial-06Bold.ttf" />
+    <Resource Include="Fonts\HeadingNowTrial-06BoldItalic.ttf" />
+    <Resource Include="Fonts\HeadingNowTrial-07Extrabold.ttf" />
+    <Resource Include="Fonts\HeadingNowTrial-07ExtraboldItalic.ttf" />
+    <Resource Include="Fonts\HeadingNowTrial-08Heavy.ttf" />
+    <Resource Include="Fonts\HeadingNowTrial-08HeavyItalic.ttf" />
+    <Resource Include="Fonts\HeadingNowTrial-11Thin.ttf" />
+    <Resource Include="Fonts\HeadingNowTrial-11ThinItalic.ttf" />
+    <Resource Include="Fonts\HeadingNowTrial-12Light.ttf" />
+    <Resource Include="Fonts\HeadingNowTrial-12LightItalic.ttf" />
+    <Resource Include="Fonts\HeadingNowTrial-13Book.ttf" />
+    <Resource Include="Fonts\HeadingNowTrial-13BookItalic.ttf" />
+    <Resource Include="Fonts\HeadingNowTrial-14Regular.ttf" />
+    <Resource Include="Fonts\HeadingNowTrial-14RegularItalic.ttf" />
+    <Resource Include="Fonts\HeadingNowTrial-15Medium.ttf" />
+    <Resource Include="Fonts\HeadingNowTrial-15MediumItalic.ttf" />
+    <Resource Include="Fonts\HeadingNowTrial-16Bold.ttf" />
+    <Resource Include="Fonts\HeadingNowTrial-16BoldItalic.ttf" />
+    <Resource Include="Fonts\HeadingNowTrial-17Extrabold.ttf" />
+    <Resource Include="Fonts\HeadingNowTrial-17ExtraboldItalic.ttf" />
+    <Resource Include="Fonts\HeadingNowTrial-18Heavy.ttf" />
+    <Resource Include="Fonts\HeadingNowTrial-18HeavyItalic.ttf" />
+    <Resource Include="Fonts\HeadingNowTrial-21Thin.ttf" />
+    <Resource Include="Fonts\HeadingNowTrial-21ThinItalic.ttf" />
+    <Resource Include="Fonts\HeadingNowTrial-22Light.ttf" />
+    <Resource Include="Fonts\HeadingNowTrial-22LightItalic.ttf" />
+    <Resource Include="Fonts\HeadingNowTrial-23Book.ttf" />
+    <Resource Include="Fonts\HeadingNowTrial-23BookItalic.ttf" />
+    <Resource Include="Fonts\HeadingNowTrial-24Regular.ttf" />
+    <Resource Include="Fonts\HeadingNowTrial-24RegularItalic.ttf" />
+    <Resource Include="Fonts\HeadingNowTrial-25Medium.ttf" />
+    <Resource Include="Fonts\HeadingNowTrial-25MediumItalic.ttf" />
+    <Resource Include="Fonts\HeadingNowTrial-26Bold.ttf" />
+    <Resource Include="Fonts\HeadingNowTrial-26BoldItalic.ttf" />
+    <Resource Include="Fonts\HeadingNowTrial-27Extrabold.ttf" />
+    <Resource Include="Fonts\HeadingNowTrial-27ExtraboldItalic.ttf" />
+    <Resource Include="Fonts\HeadingNowTrial-28Heavy.ttf" />
+    <Resource Include="Fonts\HeadingNowTrial-28HeavyItalic.ttf" />
+    <Resource Include="Fonts\HeadingNowTrial-31Thin.ttf" />
+    <Resource Include="Fonts\HeadingNowTrial-31ThinItalic.ttf" />
+    <Resource Include="Fonts\HeadingNowTrial-32Light.ttf" />
+    <Resource Include="Fonts\HeadingNowTrial-32LightItalic.ttf" />
+    <Resource Include="Fonts\HeadingNowTrial-33Book.ttf" />
+    <Resource Include="Fonts\HeadingNowTrial-33BookItalic.ttf" />
+    <Resource Include="Fonts\HeadingNowTrial-34Regular.ttf" />
+    <Resource Include="Fonts\HeadingNowTrial-34RegularItalic.ttf" />
+    <Resource Include="Fonts\HeadingNowTrial-35Medium.ttf" />
+    <Resource Include="Fonts\HeadingNowTrial-35MediumItalic.ttf" />
+    <Resource Include="Fonts\HeadingNowTrial-36Bold.ttf" />
+    <Resource Include="Fonts\HeadingNowTrial-36BoldItalic.ttf" />
+    <Resource Include="Fonts\HeadingNowTrial-37Extrabold.ttf" />
+    <Resource Include="Fonts\HeadingNowTrial-37ExtraboldItalic.ttf" />
+    <Resource Include="Fonts\HeadingNowTrial-38Heavy.ttf" />
+    <Resource Include="Fonts\HeadingNowTrial-38HeavyItalic.ttf" />
+    <Resource Include="Fonts\HeadingNowTrial-41Thin.ttf" />
+    <Resource Include="Fonts\HeadingNowTrial-41ThinItalic.ttf" />
+    <Resource Include="Fonts\HeadingNowTrial-42Light.ttf" />
+    <Resource Include="Fonts\HeadingNowTrial-42LightItalic.ttf" />
+    <Resource Include="Fonts\HeadingNowTrial-43Book.ttf" />
+    <Resource Include="Fonts\HeadingNowTrial-43BookItalic.ttf" />
+    <Resource Include="Fonts\HeadingNowTrial-44Regular.ttf" />
+    <Resource Include="Fonts\HeadingNowTrial-44RegularItalic.ttf" />
+    <Resource Include="Fonts\HeadingNowTrial-45Medium.ttf" />
+    <Resource Include="Fonts\HeadingNowTrial-45MediumItalic.ttf" />
+    <Resource Include="Fonts\HeadingNowTrial-46Bold.ttf" />
+    <Resource Include="Fonts\HeadingNowTrial-46BoldItalic.ttf" />
+    <Resource Include="Fonts\HeadingNowTrial-47Extrabold.ttf" />
+    <Resource Include="Fonts\HeadingNowTrial-47ExtraboldItalic.ttf" />
+    <Resource Include="Fonts\HeadingNowTrial-48Heavy.ttf" />
+    <Resource Include="Fonts\HeadingNowTrial-48HeavyItalic.ttf" />
+    <Resource Include="Fonts\HeadingNowTrial-51Thin.ttf" />
+    <Resource Include="Fonts\HeadingNowTrial-51ThinItalic.ttf" />
+    <Resource Include="Fonts\HeadingNowTrial-52Light.ttf" />
+    <Resource Include="Fonts\HeadingNowTrial-52LightItalic.ttf" />
+    <Resource Include="Fonts\HeadingNowTrial-53Book.ttf" />
+    <Resource Include="Fonts\HeadingNowTrial-53BookItalic.ttf" />
+    <Resource Include="Fonts\HeadingNowTrial-54Regular.ttf" />
+    <Resource Include="Fonts\HeadingNowTrial-54RegularItalic.ttf" />
+    <Resource Include="Fonts\HeadingNowTrial-55Medium.ttf" />
+    <Resource Include="Fonts\HeadingNowTrial-55MediumItalic.ttf" />
+    <Resource Include="Fonts\HeadingNowTrial-56Bold.ttf" />
+    <Resource Include="Fonts\HeadingNowTrial-56BoldItalic.ttf" />
+    <Resource Include="Fonts\HeadingNowTrial-57Extrabold.ttf" />
+    <Resource Include="Fonts\HeadingNowTrial-57ExtraboldItalic.ttf" />
+    <Resource Include="Fonts\HeadingNowTrial-58Heavy.ttf" />
+    <Resource Include="Fonts\HeadingNowTrial-58HeavyItalic.ttf" />
+    <Resource Include="Fonts\HeadingNowTrial-61Thin.ttf" />
+    <Resource Include="Fonts\HeadingNowTrial-61ThinItalic.ttf" />
+    <Resource Include="Fonts\HeadingNowTrial-62Light.ttf" />
+    <Resource Include="Fonts\HeadingNowTrial-62LightItalic.ttf" />
+    <Resource Include="Fonts\HeadingNowTrial-63Book.ttf" />
+    <Resource Include="Fonts\HeadingNowTrial-63BookItalic.ttf" />
+    <Resource Include="Fonts\HeadingNowTrial-64Regular.ttf" />
+    <Resource Include="Fonts\HeadingNowTrial-64RegularItalic.ttf" />
+    <Resource Include="Fonts\HeadingNowTrial-65Medium.ttf" />
+    <Resource Include="Fonts\HeadingNowTrial-65MediumItalic.ttf" />
+    <Resource Include="Fonts\HeadingNowTrial-66Bold.ttf" />
+    <Resource Include="Fonts\HeadingNowTrial-66BoldItalic.ttf" />
+    <Resource Include="Fonts\HeadingNowTrial-67Extrabold.ttf" />
+    <Resource Include="Fonts\HeadingNowTrial-67ExtraboldItalic.ttf" />
+    <Resource Include="Fonts\HeadingNowTrial-68Heavy.ttf" />
+    <Resource Include="Fonts\HeadingNowTrial-68HeavyItalic.ttf" />
+    <Resource Include="Fonts\Instruction Bold Italic.otf" />
+    <Resource Include="Fonts\Instruction Bold.otf" />
+    <Resource Include="Fonts\Instruction Italic.otf" />
+    <Resource Include="Fonts\Instruction.otf" />
+    <Resource Include="Fonts\KeepCalm-Medium.ttf" />
+    <Resource Include="Fonts\MADE SAONARA 2 PERSONAL USE.otf" />
+    <Resource Include="Fonts\MADE SAONARA PERSONAL USE.otf" />
+    <Resource Include="Fonts\MADEAvenuePERSONALUSE-Regular.otf" />
+    <Resource Include="Fonts\Magazine-Bold.ttf" />
+    <Resource Include="Fonts\Magazine.ttf" />
+    <Resource Include="Fonts\Masone.otf" />
+    <Resource Include="Fonts\monofonto rg.otf" />
+    <Resource Include="Fonts\NewakeFont-Demo.otf" />
+    <Resource Include="Fonts\NewYork PERSONAL USE.otf" />
+    <Resource Include="Fonts\NT VALENTINO %28Personal use%29.otf" />
+    <Resource Include="Fonts\NT VALENTINO Italic %28Personal use%29.otf" />
+    <Resource Include="Fonts\steelfish bd it.otf" />
+    <Resource Include="Fonts\steelfish bd.otf" />
+    <Resource Include="Fonts\steelfish eb it.otf" />
+    <Resource Include="Fonts\steelfish eb.otf" />
+    <Resource Include="Fonts\steelfish outline.otf" />
+    <Resource Include="Fonts\steelfish rg it.otf" />
+    <Resource Include="Fonts\steelfish rg.otf" />
+    <Resource Include="Fonts\Vogue.ttf" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Facebook.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Fonts\More Info.txt" />
+    <Resource Include="Fonts\READ ME FIRST.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Google.png" />
+    <Resource Include="Images\Instagram.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Email.png" />
+    <Resource Include="Images\Gmail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Close.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
